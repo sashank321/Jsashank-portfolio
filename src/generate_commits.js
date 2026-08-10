@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, execFileSync } = require('child_process');
 
 const changelogPath = path.join(__dirname, '..', 'changelog.md');
 
@@ -94,7 +94,7 @@ for (let i = 0; i < totalCommits; i++) {
 
   // Add and commit
   execSync('git add changelog.md', { stdio: 'ignore' });
-  execSync(`git commit -m "${commitMessage.replace(/"/g, '\\"')}"`, { stdio: 'ignore' });
+  execFileSync('git', ['commit', '-m', commitMessage], { stdio: 'ignore' });
 }
 
 console.log(`Successfully generated ${totalCommits} commits.`);
