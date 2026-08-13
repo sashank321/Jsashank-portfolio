@@ -26,7 +26,7 @@ interface Particle {
 }
 
 export default function ParticleText({
-  text = "SASHANK",
+  text = "YASHWANTH",
   fontSize = 120,
   fontFamily = "'Cormorant Garamond', Georgia, serif",
   fontWeight = "300",
