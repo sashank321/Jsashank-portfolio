@@ -1,0 +1,4 @@
+## 2025-02-21 - [Security Headers vs Animations]
+**Vulnerability:** Missing HTTP security headers (CSP, X-Frame-Options, etc.) which leaves the application vulnerable to various attacks like XSS and Clickjacking.
+**Learning:** When implementing Content-Security-Policy (CSP) headers in Next.js applications that utilize animation libraries like GSAP and Framer Motion, strict CSP directives (disallowing inline scripts and styles) will break these animations because they rely heavily on injecting inline styles.
+**Prevention:** Always ensure that `style-src` (and potentially `script-src` for some dynamic behaviors) includes `'unsafe-inline'` when using these specific animation libraries, or carefully refactor the animation approaches to avoid inline styles if higher security is absolutely required.
