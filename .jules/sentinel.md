@@ -1,0 +1,4 @@
+## 2024-05-18 - Added Security Headers to next.config.ts
+**Vulnerability:** The application was missing basic security headers such as Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Strict-Transport-Security, making it slightly more susceptible to XSS, clickjacking, and mime-sniffing attacks.
+**Learning:** This Next.js application relies on GSAP and Framer Motion for UI animations, which required adjusting the Content-Security-Policy to allow 'unsafe-inline' for scripts/styles and 'unsafe-eval' for scripts. A completely strict CSP would break these animations.
+**Prevention:** Always verify how UI libraries (especially those doing complex animations or injecting styles/scripts) interact with strict security policies. Default Next.js templates often lack these headers; always configure `async headers()` in `next.config.ts` taking into account the specific dependencies.
