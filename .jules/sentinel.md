@@ -1,0 +1,4 @@
+## 2025-02-14 - Content Security Policy with Animation Libraries
+**Vulnerability:** Missing security headers (CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Strict-Transport-Security) exposed the application to various attacks like XSS, Clickjacking, and MIME sniffing.
+**Learning:** When configuring CSP in applications that heavily utilize GSAP and Framer Motion, it's critical to allow `unsafe-inline` for both `script-src` and `style-src`, and `unsafe-eval` for `script-src`. These animation libraries rely on inline style injection and sometimes dynamic script evaluation to function. Blocking these will break the core UI experience of the portfolio.
+**Prevention:** Always verify animation library requirements when tightening CSP rules, and carefully balance defense-in-depth with required application functionality.
