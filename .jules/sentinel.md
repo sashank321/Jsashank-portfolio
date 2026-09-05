@@ -1,0 +1,4 @@
+## 2024-11-20 - Configuring Content-Security-Policy (CSP) headers with Animation Libraries
+**Vulnerability:** Weak or missing Content Security Policy (CSP) headers allow cross-site scripting (XSS) and other code injection attacks.
+**Learning:** Next.js applications relying on modern animation libraries such as GSAP and Framer Motion heavily utilize inline styles and dynamic script evaluations. Implementing a strict `script-src` and `style-src` that removes `unsafe-inline` and `unsafe-eval` causes these UI animations to break, leading to critical layout shifts or broken functionalities.
+**Prevention:** When enforcing CSP on a Next.js app using GSAP/Framer Motion, `script-src` must include `'unsafe-eval'` and `'unsafe-inline'`, and `style-src` must include `'unsafe-inline'`. It is crucial to strike a balance between high security and application functionality, noting these exceptions directly in `next.config.ts` or security documentation.
