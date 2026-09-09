@@ -1,0 +1,4 @@
+## 2024-11-23 - Missing Security Headers in Next.js
+**Vulnerability:** The Next.js application was missing critical security headers, including Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Strict-Transport-Security.
+**Learning:** Next.js requires these to be manually configured in `next.config.ts`. Furthermore, because the app uses animation libraries like GSAP and Framer Motion, the CSP specifically needed `'unsafe-inline'` for scripts and styles, and `'unsafe-eval'` for scripts. Failing to allow these breaks the app's core UI functionality.
+**Prevention:** Always verify security headers in Next.js applications and remember to balance strict CSP rules with the requirements of animation/UI libraries used in the project.
