@@ -1,0 +1,4 @@
+## 2024-06-25 - Content Security Policy with GSAP and Framer Motion
+**Vulnerability:** Missing Content Security Policy (CSP) headers, allowing potential XSS attacks to execute unauthorized scripts or inject malicious styles.
+**Learning:** When implementing CSP headers in this Next.js application, strict rules like removing `'unsafe-inline'` and `'unsafe-eval'` break the application's core UI animations. Specifically, GSAP and Framer Motion require `'unsafe-inline'` for dynamically updating CSS styles during animations, and `'unsafe-eval'` may be used by internal mechanisms or related development tools.
+**Prevention:** Always test CSP changes against the application's critical features (like animations). In projects heavily reliant on animation libraries (GSAP/Framer Motion), the CSP must explicitly permit `'unsafe-inline'` (for styles and scripts) and `'unsafe-eval'` (for scripts) to ensure functionality while still restricting other sources.
