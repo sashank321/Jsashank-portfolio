@@ -1,0 +1,4 @@
+## 2024-05-24 - Content Security Policy Constraints for Animations
+**Vulnerability:** Missing Content Security Policy (CSP) headers, allowing potential Cross-Site Scripting (XSS) and data injection attacks.
+**Learning:** Adding a strict CSP broke the Next.js portfolio because it relies heavily on GSAP and Framer Motion for UI animations. These animation libraries require inline styles and JavaScript evaluation to function correctly.
+**Prevention:** When configuring CSP in modern React apps using animation libraries like GSAP or Framer Motion, it's necessary to allow `'unsafe-inline'` in `style-src` (and sometimes `script-src`) and `'unsafe-eval'` in `script-src` to maintain application functionality, while still enforcing restrictions on other sources like `object-src` and `frame-ancestors`.
