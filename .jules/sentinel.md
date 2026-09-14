@@ -1,0 +1,4 @@
+## 2024-03-24 - [CSP and Animations]
+**Vulnerability:** Missing Content Security Policy (CSP) headers leaving the application vulnerable to XSS and data injection attacks.
+**Learning:** When configuring CSP headers in a Next.js application that heavily relies on animation libraries like GSAP and Framer Motion, strict CSP rules can break these animations. 'unsafe-inline' for scripts and styles, and 'unsafe-eval' for scripts must be explicitly allowed to ensure these libraries can dynamically manipulate the DOM and styles as intended without triggering browser security interventions.
+**Prevention:** Always verify the requirements of UI animation and interactive libraries against strict CSP directives before deployment. Document exemptions explicitly when they are required for core visual functionality.
