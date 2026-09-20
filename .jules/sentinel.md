@@ -1,0 +1,4 @@
+## 2026-09-20 - [Add Security Headers to Next.js Config]
+**Vulnerability:** The Next.js application was completely missing security headers. Next.js does not set these by default. Missing headers like `X-Content-Type-Options`, `X-Frame-Options`, `Strict-Transport-Security` (HSTS), and `Content-Security-Policy` (CSP) expose the application to various attacks such as Clickjacking, MIME-sniffing, XSS, and Man-in-the-Middle attacks.
+**Learning:** Next.js uses `next.config.ts` to configure security headers via the `async headers()` method. The application uses GSAP and Framer Motion which require `'unsafe-inline'` and `'unsafe-eval'` in the CSP. Adding these specific exceptions is necessary for the app to function.
+**Prevention:** Ensure new Next.js projects configure security headers from the start, setting them in `next.config.ts`.
