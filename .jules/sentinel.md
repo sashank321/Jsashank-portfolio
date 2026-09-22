@@ -1,0 +1,4 @@
+## 2023-11-15 - [CSP with GSAP & Canvas in Next.js]
+**Vulnerability:** Missing Content-Security-Policy and standard HTTP security headers (X-Frame-Options, etc.), exposing the application to XSS and clickjacking.
+**Learning:** While strict CSPs are ideal, adding security headers to a Next.js application heavily reliant on GSAP, Lenis, and HTML5 Canvas requires careful compromises. `unsafe-inline` (for inline styles set by GSAP) and `unsafe-eval` (often required by complex animation libraries or development modes) must be permitted in the CSP to prevent breaking the core interactive features of the portfolio.
+**Prevention:** Always verify standard security headers are present early in the project. When implementing CSPs on animation-heavy sites, test locally to identify required exceptions (like `unsafe-inline` and `unsafe-eval`) rather than applying a blanket restrictive policy that breaks functionality.
