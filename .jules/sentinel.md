@@ -1,0 +1,4 @@
+## 2025-02-23 - [CSP Configuration with Animation Libraries]
+**Vulnerability:** Missing Content-Security-Policy (CSP) headers which could allow Cross-Site Scripting (XSS) and other injection attacks.
+**Learning:** When configuring CSP for applications heavily utilizing animation libraries like GSAP and Framer Motion, strict CSP rules (like disabling 'unsafe-inline' and 'unsafe-eval') will break the dynamic styling and execution required by these libraries.
+**Prevention:** Ensure that when implementing CSP in projects with GSAP or Framer Motion, 'unsafe-inline' for scripts/styles and 'unsafe-eval' for scripts are explicitly allowed to maintain application functionality while still providing baseline protection against other risks.
