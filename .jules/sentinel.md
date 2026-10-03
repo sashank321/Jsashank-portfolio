@@ -1,0 +1,4 @@
+## 2026-10-03 - Next.js App Router CSP Configuration with Animation Libraries
+**Vulnerability:** Missing security headers (CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, and Strict-Transport-Security) in a static Next.js app.
+**Learning:** Adding a strict Content-Security-Policy (CSP) in Next.js when using animation libraries like GSAP and Framer Motion requires specific adjustments. Specifically, 'unsafe-inline' for scripts and styles, and 'unsafe-eval' for scripts must be allowed, otherwise the animations break.
+**Prevention:** When configuring CSP headers in `next.config.ts` for Next.js applications using GSAP/Framer Motion, ensure that 'unsafe-inline' and 'unsafe-eval' are included in the `script-src` directive, and 'unsafe-inline' is in the `style-src` directive.
