@@ -1,0 +1,4 @@
+## 2024-05-20 - Missing Next.js Security Headers
+**Vulnerability:** Next.js static apps do not include essential security headers (CSP, X-Frame-Options, etc.) by default, leaving them vulnerable to XSS, clickjacking, and MIME-type sniffing.
+**Learning:** Security headers must be explicitly configured via the `headers()` function in `next.config.ts`, but CSP must allow 'unsafe-inline' and 'unsafe-eval' for GSAP/Framer Motion.
+**Prevention:** Always verify and manually configure `next.config.ts` to output standard security headers on new Next.js projects, accommodating animation library constraints.
