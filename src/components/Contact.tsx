@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SOCIAL_LINKS = [
   { name: "LINKEDIN", url: "https://www.linkedin.com/in/sashank-junnuru-63a4b8395/" },
-  { name: "GITHUB", url: "https://github.com/sashank321" },
+  { name: "GITHUB", url: "https://github.com/s-yaswanthkumar" },
   { name: "TWITTER", url: "https://twitter.com" },
 ];
 
@@ -108,10 +108,10 @@ export default function Contact() {
           {/* Email */}
           <div className="group inline-block contact-email" data-cursor="READ">
             <a
-              href="mailto:junnurusasank@gmail.com"
-              className="font-serif text-3xl sm:text-5xl md:text-6xl font-extralight text-brand-text hover:opacity-60 transition-opacity duration-500 flex items-center gap-4 py-2 border-b border-brand-text/10"
+              href="mailto:sukhavasiyaswanthkumar2009@gmail.com"
+              className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight text-brand-text hover:opacity-60 transition-opacity duration-500 flex items-center gap-4 py-2 border-b border-brand-text/10"
             >
-              junnurusasank@gmail.com
+              sukhavasiyaswanthkumar2009@gmail.com
               <span className="inline-block transform transition-transform duration-500 ease-out group-hover:translate-x-3 group-hover:-translate-y-1">
                 &rarr;
               </span>
@@ -154,7 +154,7 @@ export default function Contact() {
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-brand-text-muted border-t border-brand-neutral/15 pt-8 contact-footer-item">
             <span className="text-[9px] font-sans font-bold tracking-[0.2em] uppercase">
-              &copy; {currentYear} Sashank. All rights reserved.
+              &copy; {currentYear} Yashwanth. All rights reserved.
             </span>
             <span className="text-[9px] font-sans font-bold tracking-[0.2em] uppercase flex items-center gap-2">
               Built with precision

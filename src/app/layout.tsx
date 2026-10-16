@@ -17,7 +17,7 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SASHANK | Software Engineer & Designer",
+  title: "YASHWANTH | Software Engineer & Designer",
   description:
     "An interactive software engineering experience — combining precision engineering with editorial design and delightful interactions.",
   keywords: [
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
   ],
-  authors: [{ name: "Sashank" }],
+  authors: [{ name: "Yashwanth" }],
   openGraph: {
-    title: "SASHANK | Software Engineer & Designer",
+    title: "YASHWANTH | Software Engineer & Designer",
     description:
       "An interactive software engineering experience — combining precision engineering with editorial design.",
     url: "https://sashank.dev",
-    siteName: "Sashank",
+    siteName: "Yashwanth",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SASHANK | Software Engineer & Designer",
+    title: "YASHWANTH | Software Engineer & Designer",
     description:
       "An interactive software engineering experience — combining precision engineering with editorial design.",
   },
