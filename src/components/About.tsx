@@ -129,7 +129,7 @@ export default function About() {
             02 / The Engineer
           </span>
           <h2 className="font-serif text-4xl md:text-6xl font-light tracking-tight text-brand-text">
-            About Sashank
+            About Yashwanth
           </h2>
         </div>
 
@@ -143,8 +143,8 @@ export default function About() {
               data-cursor="EXPLORE"
             >
               <Image
-                src="/images/sashank.png"
-                alt="Portrait of Sashank"
+                src="/images/yashwanth.png"
+                alt="Portrait of Yashwanth"
                 fill
                 className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -152,7 +152,7 @@ export default function About() {
             </div>
             <div className="flex justify-between items-center text-[9px] font-sans text-brand-text-muted tracking-[0.2em] uppercase">
               <span>Portrait — 2026</span>
-              <span>Sashank</span>
+              <span>Yashwanth</span>
             </div>
           </div>
 

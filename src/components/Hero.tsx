@@ -82,7 +82,7 @@ export default function Hero() {
       // ─── PHASE 1: Black screen (0.4s) ───
       tl.to({}, { duration: 0.4 });
 
-      // ─── PHASE 2: Particle text "SASHANK" fades in ───
+      // ─── PHASE 2: Particle text "YASHWANTH" fades in ───
       tl.to(particleContainerRef.current, {
         opacity: 1,
         duration: 1,
@@ -242,7 +242,7 @@ export default function Hero() {
           className="absolute inset-0 w-full h-full opacity-0 pointer-events-auto"
         >
           <ParticleText
-            text="SASHANK"
+            text="YASHWANTH"
             fontSize={particleFontSize}
             fontWeight="300"
             fontFamily="'Cormorant Garamond', Georgia, serif"
