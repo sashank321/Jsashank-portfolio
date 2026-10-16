@@ -1,4 +1,4 @@
-# Sashank Junnuru — Personal Portfolio
+# Yashwanth Junnuru — Personal Portfolio
 
 > A high-performance, dark-mode native portfolio built with Next.js 16, GSAP scroll choreography, interactive particle physics, and bespoke glassmorphism.
 
@@ -36,7 +36,7 @@ I built this site to combine clean editorial design with responsive, high-framer
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sashank321/Jsashank-portfolio.git
+   git clone https://github.com/s-yaswanthkumar/Jsashank-portfolio.git
    ```
 
 2. **Install dependencies**:
@@ -53,4 +53,4 @@ I built this site to combine clean editorial design with responsive, high-framer
 
 ---
 
-Designed & engineered by **Sashank Junnuru** • [GitHub](https://github.com/sashank321) • [LinkedIn](https://www.linkedin.com/in/sashank-junnuru-63a4b8395/)
+Designed & engineered by **Yashwanth Junnuru** • [GitHub](https://github.com/s-yaswanthkumar) • [LinkedIn](https://www.linkedin.com/in/sashank-junnuru-63a4b8395/)
